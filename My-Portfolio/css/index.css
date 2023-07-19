@@ -1,0 +1,257 @@
+#header a{
+    padding: 10px;
+    margin: 2rem;
+    text-decoration: none;
+    top: 0;
+    left: 450px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 2px 8px rgba(63, 2, 37, 0.2);
+    transition: all 0.6s ease-in-out;
+    border-radius: 12px;
+    font-size: larger;
+    
+}
+#header a:hover, #header a:active{
+   transform: scale(1.1);
+    background-color: #8ec5ba;
+    color: rgb(68, 66, 66);
+}
+
+#welcome{
+    padding: 6rem;
+    background: linear-gradient(to right bottom, #FFDEE9, #16A085);
+}
+
+#welcome  div img{
+   border: solid 5px wheat;
+   height: 10rem;
+   width: 10rem;
+   border-radius: 1.5rem;
+   object-fit: cover; 
+   box-shadow: 0 2px 8px rgba(63, 2, 37, 0.8);
+   transform: rotateZ(-5deg);
+   transition: all ease-in-out 0.5s;
+   align-items: center;
+   margin: 10px 10px 50px 10px;   
+   left: 500px;
+   
+}
+
+#welcome  div img:active, #welcome div img:hover{
+    transform: scale(1.3);
+}
+
+#welcome header {
+    display: flex;
+    margin: 50px 0 0 0;
+}
+#heading{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: rgb(1, 1, 39);
+   
+}
+#welcome p{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(1, 1, 39);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+#welcome p:hover{
+    transform: translateY(-10px);
+}
+
+
+#content{
+    background-color: wheat;
+    padding: 50px;
+    width: 60rem;
+    margin: -5rem auto 0 auto;
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+/* #content:hover, #content:active{
+    transform: scale(1.1);
+} */
+
+#content h2{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(1, 1, 39) ;
+}
+
+
+#content ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    gap: 1rem;
+    margin: 0;
+    
+}
+
+#content li{
+    flex: 1;
+}
+
+.fa-hourglass-end{
+    font-size: 70px;
+    padding: 10px;
+    color:rgb(1, 1, 39) ;
+    
+}
+
+
+
+.fa-user-graduate{
+    font-size: 70px;
+    padding: 10px;
+    color:rgb(1, 1, 39) ;
+    
+}
+
+
+
+.fa-screwdriver-wrench{
+    font-size: 70px;
+    padding: 10px;
+    color:rgb(1, 1, 39) ;
+    transition: color 0.5s;
+}
+#posts a{
+    text-decoration: none;
+}
+#posts div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease-in;
+    color: rgb(1, 1, 39);
+    margin-top: 10px;
+}
+ #posts div:hover, #posts div:active{
+    background-color:rgb(1, 1, 39) ;
+    color: white;
+    transform: scale(1.1);
+ }
+
+ @keyframes slideInBottom{
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+
+ }
+ #content{
+    animation: slideInBottom 1s ease-in-out;
+ }
+ .content{
+    padding: 2rem  1rem;
+ }
+
+  .content h3{
+    margin-bottom: 1rem;
+    font-weight: bolder;
+  }
+
+ #about{
+    padding: 5rem;
+    margin: 0;
+    text-align: center;
+    background-color: #067a63;
+    
+ }
+
+ #about h2{
+    margin-bottom: 30px;
+    padding: 20px;
+    color: wheat;
+    font-size: 3rem;
+    font-weight: bold;
+ }
+.wrapper{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+ .wrapper .first{
+    font-size: 60px;
+    margin-right: 0;
+    
+    
+ }
+ .second li{
+    font-size: 60px;
+    list-style: none;
+    padding: 0 20x;
+    color: wheat;
+    text-shadow: 0 0 10px wheat;
+    animation: slide 9s steps(4) infinite;
+    /* animation:  colorful 6s infinite; */
+    position: relative;
+    top: 0;
+
+ }
+ @keyframes slide{
+    100%{
+        top: -360px;
+    }   
+ }
+ /* @keyframes colorful{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+ } */
+
+
+.wrapper .second{
+    overflow: hidden;
+    height: 90px;
+    line-height: 90px;
+}
+
+ .second li span{
+    position: relative;
+ }
+
+ .second li span::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    border-left: 2px solid wheat;
+    background: #067a63;
+    left: 0;
+    animation: typing 1.5s steps(10) infinite alternate; 
+ }
+
+ @keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+ }
+
+ 
+
+
